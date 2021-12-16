@@ -1,0 +1,6 @@
+@use "../../scss/abstracts" as *;
+
+.home {
+  @include layout-grid;
+  grid-template-rows: min-content 65rem;
+}

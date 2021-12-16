@@ -1,0 +1,10 @@
+.header {
+  grid-column: center-start / center-end;
+  display: flex;
+  align-items: center;
+  padding: 1.6rem 0;
+}
+
+.button {
+  margin-left: auto;
+}

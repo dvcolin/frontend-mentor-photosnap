@@ -1,0 +1,40 @@
+@use "../../scss/abstracts" as *;
+
+.hero {
+  grid-column: full-start / full-end;
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: $color-black;
+}
+
+.contentBox {
+  max-width: 38.7rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.heading {
+  @include heading(h1, light);
+}
+
+.button {
+  margin-top: 4.8rem;
+}
+
+.description {
+  margin-top: 2rem;
+}
+
+.image {
+  background-image: url(../../assets/home/desktop/create-and-share.jpg);
+  background-size: cover;
+  background-position: center;
+}

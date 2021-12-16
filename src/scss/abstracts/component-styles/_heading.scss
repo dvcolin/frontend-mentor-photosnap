@@ -1,0 +1,20 @@
+@use "../fonts" as *;
+
+%heading {
+  font-weight: $font-weight-bold;
+  text-transform: uppercase;
+}
+
+@mixin heading($size, $variant: dark) {
+  @extend %heading;
+
+  @if $size == h1 {
+    font-size: 4rem;
+    line-height: $line-height-h1;
+    letter-spacing: $letter-spacing-h1;
+  }
+
+  @if $variant == light {
+    color: white;
+  }
+}
