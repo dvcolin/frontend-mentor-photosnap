@@ -4,25 +4,60 @@
   &:link,
   &:visited {
     display: flex;
-    padding: 1rem 2.8rem;
+    align-items: center;
     font-weight: $font-weight-bold;
     text-transform: uppercase;
     text-decoration: none;
     font-size: 1.2rem;
     letter-spacing: 0.2rem;
+    transition: all 0.2s;
   }
 }
 
-.button--dark {
-  background-color: $color-black;
-  color: $color-white;
+%button--primary {
+  padding: 1rem 2.8rem;
 }
 
-.button--light {
+.button--primary-dark {
+  @extend %button--primary;
+  background-color: $color-black;
+  color: $color-white;
+
+  &:hover {
+    background-color: $color-light-gray;
+    color: $color-black;
+  }
+}
+
+.button--primary-light {
+  @extend %button--primary;
+
   background-color: $color-white;
   color: $color-black;
 
   &:hover {
     background-color: $color-light-gray;
   }
+}
+
+%button--secondary {
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.button--secondary-dark {
+  @extend %button--secondary;
+
+  color: $color-black;
+}
+
+.button--secondary-light {
+  @extend %button--secondary;
+
+  color: $color-white;
+}
+
+.arrowIcon {
+  margin-left: 1.6rem;
 }

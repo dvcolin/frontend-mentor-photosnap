@@ -15,7 +15,7 @@ const Hero = () => {
             We make it easy to share photos, tell stories and connect with
             others.
           </p>
-          <Button variant="primary" color="light" className={styles.button}>
+          <Button variant="secondary" color="light" className={styles.button}>
             Get an invite
           </Button>
         </div>
